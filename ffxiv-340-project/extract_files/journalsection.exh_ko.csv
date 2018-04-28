@@ -1,0 +1,11 @@
+Index,0 [0x0][0x0],1 [0x19][0x4],2 [0x1a][0x4]
+0,"주요 퀘스트 1(신생 에오르제아)",true,true
+1,"주요 퀘스트 2(창천의 이슈가르드)",true,true
+2,"연대기 퀘스트",true,true
+3,"부가 퀘스트",true,true
+4,"야만족 퀘스트 1(신생 에오르제아)",true,true
+5,"야만족 퀘스트 2(창천의 이슈가르드)",true,true
+6,"직업 퀘스트",true,true
+7,"기타",true,true
+8,"의뢰",true,false
+9,"임무 관련",false,true

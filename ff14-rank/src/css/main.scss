@@ -1,0 +1,59 @@
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+
+@for $i from 0 through 20 {
+    .mgt#{$i} {
+        margin-top:#{$i}px;
+    }
+    .mgb#{$i} {
+        margin-bottom:#{$i}px;
+    }
+    .pd#{$i} {
+        padding:#{$i}px;
+    }
+    .mg#{$i} {
+        margin:#{$i}px;
+    }
+    .fts-#{$i} {
+        font-size:#{$i}px;
+    }  
+}
+
+@for $i from 1 through 100 {
+    .pdt#{$i} {
+        padding-top:#{$i}px;
+    }
+    .pdb#{$i} {
+        padding-top:#{$i}px;
+    }
+    .mgt#{$i} {
+        margin-top:#{$i}px;
+    }
+    .mgb#{$i} {
+        margin-bottom:#{$i}px;
+    }
+    .width#{$i} {
+        width:#{$i}px;
+    }
+    .height#{$i} {
+        height:#{$i}px;
+    }
+}
+
+.disp-inline {
+    display: inline;
+}
+
+.disp-inb {
+    display: inline-block;
+}
+
+.line-2 {
+    line-height: 2;
+}

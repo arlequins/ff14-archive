@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.setine.mybatis.db.item.ItemMapper">
+
+
+	<resultMap type="Item" id="ItemResultMap">
+		<result property="key" column="Key" />
+		<result property="index_kr" column="Index_kr" />
+		<result property="index_ja" column="Index_ja" />
+		<result property="index_en" column="Index_en" />
+		<result property="path" column="path" />
+	</resultMap>
+	<resultMap type="Total" id="TotalResultMap">
+		<result property="key" column="Key" />
+		<result property="type" column="type" />
+		<result property="index_kr" column="Index_kr" />
+		<result property="index_ja" column="Index_ja" />
+		<result property="index_en" column="Index_en" />
+		<result property="path" column="path" />
+	</resultMap>
+
+	<resultMap type="Total" id="TotalResultMap2">
+		<result property="key" column="Key" />
+		<result property="type" column="type" />
+		<result property="index_kr" column="index_kr" />
+		<result property="index_ja" column="index_ja" />
+		<result property="index_en" column="index_en" />
+	</resultMap>
+
+	<select id="getList" resultMap="TotalResultMap">
+		SELECT A.`Key`, 'item' as `type`,A.`Index_kr`, A.`Index_ja`,
+		A.`Index_en`, A.`path` FROM `item` A WHERE A.`Index_kr` IS NOT NULL
+		AND A.legacy = 0
+		<if test="params.category != -1">AND A.`Key` = ${params.category}</if>
+		<if test="params.question.length() > 0">AND MATCH(A.`UIName_kr`, A.`UIName_en`, A.`UIName_ja`)
+			AGAINST(CONCAT(#{question},'*') IN BOOLEAN MODE)</if>
+		ORDER BY A.`Key` DESC LIMIT 0,100;
+	</select>
+	<select id="getItemList" resultMap="TotalResultMap">
+		SELECT A.`Key`, 'item' as `type`,A.`Index_kr`, A.`Index_ja`,
+		A.`Index_en`, A.`path` FROM `item` A WHERE A.`Index_kr` IS NOT NULL
+		AND A.legacy = 0
+		<if test="params.category != -1">AND A.`Key` = ${params.category}</if>
+		<if test="params.question.length() > 0">AND MATCH(A.`UIName_kr`, A.`UIName_en`, A.`UIName_ja`)
+			AGAINST(CONCAT(#{params.question},'*') IN BOOLEAN MODE)</if>
+		ORDER BY A.`Key` DESC LIMIT 0,100;
+	</select>
+	<select id="getAllList" resultMap="TotalResultMap2">
+		select a.`key`, 'item' AS `type`,a.`index_kr`, a.`index_ja`, a.`index_en` from `item` a where a.`index_kr` is not null
+		and a.legacy = 0
+		and a.`uiname_en` LIKE #{question}
+UNION
+		SELECT A.`Key`, 'achievement' AS `type`, A.`Name_kr` as `index_kr`, A.`Name_ja` as `index_ja`, A.`Name_en` as `index_en` FROM `achievement` A WHERE A.`Name_kr` IS NOT NULL
+		AND A.`Name_en` LIKE #{question}
+UNION
+		SELECT A.`Key`, 'duty' as `type`,A.`Name_kr` as `index_kr`, A.`Name_ja` as `index_ja`, A.`Name_en` as `index_en` FROM `instancecontent` A WHERE A.`Name_kr` IS NOT NULL
+		AND A.`Name_en` LIKE #{question}
+UNION
+		SELECT A.`Key`, 'enpc' as `type`,A.`Index_kr` as `index_kr`, A.`Index_ja` as `index_ja`, A.`Index_en` as `index_en` FROM `enpcresident` A WHERE A.`Index_kr` IS NOT NULL
+		AND A.`Index_en` LIKE #{question}
+UNION		
+		SELECT A.`Key`, 'bnpc' as `type`, A.`Index_kr` as `index_kr`, A.`Index_ja` as `index_ja`, A.`Index_en` as `index_en` FROM `bnpcname` A WHERE A.`Index_kr` IS NOT NULL				
+		AND A.`Index_en` LIKE #{question}
+UNION
+		SELECT A.`Key`, 'placename' AS `type`, A.`SGL_kr` as `index_kr`, A.`SGL_ja` as `index_ja`, A.`SGL_en` as `index_en` FROM `placename` A WHERE A.`SGL_kr` IS NOT NULL
+		AND A.`SGL_en` LIKE #{question}		
+UNION
+		SELECT A.`Key`,'quest' as `type`, A.`Index_kr` as `index_kr`, A.`Index_ja` as `index_ja`, A.`Index_en` as `index_en`FROM `quest` A WHERE A.`Index_kr` IS NOT NULL		
+		AND A.`Index_en` LIKE #{question}				
+UNION
+		SELECT A.`Key`, 'action' as `type`, A.`Name_kr` as `index_kr`, A.`Name_ja` as `index_ja`, A.`Name_en` as `index_en` FROM `action` A WHERE A.`Name_kr` IS NOT NULL
+		AND A.`Name_en` LIKE #{question}
+UNION
+		SELECT A.`Key`, 'class' as `type`, A.`Name_kr` as `index_kr`, A.`Name_ja` as `index_ja`, A.`Name_en` as `index_en` FROM `classjob` A WHERE A.`Name_kr` IS NOT NULL
+		AND A.`Name_en` LIKE #{question}		 
+	</select>
+
+
+</mapper>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+		<typeAlias type="com.setine.db.model.Achievement" alias="Achievement" />
+		<typeAlias type="com.setine.db.model.Duty" alias="Duty" />
+		<typeAlias type="com.setine.db.model.Item" alias="Item" />
+		<typeAlias type="com.setine.db.model.Npc" alias="Npc" />
+		<typeAlias type="com.setine.db.model.Quest" alias="Quest" />
+		<typeAlias type="com.setine.db.model.Placename" alias="Placename" />
+		<typeAlias type="com.setine.db.model.Total" alias="Total" />
+	</typeAliases>
+</configuration>

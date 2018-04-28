@@ -1,0 +1,54 @@
+Index,0 [0x0][0x0],1 [0x3][0x4],2 [0x3][0x5],3 [0x19][0xe],4 [0x1][0x6],5 [0x1][0x7],6 [0x1][0x8],7 [0x1][0x9],8 [0x1][0xa],9 [0x1][0xb],10 [0x1][0xc],11 [0x1][0xd]
+0,"1-5",0,0,false,true,true,true,true,true,true,true,true
+1,"6-10",3,6,false,true,true,true,true,true,true,true,true
+2,"11-15",8,11,false,true,true,true,true,true,true,true,true
+3,"16-20",13,16,false,true,true,true,true,true,true,true,true
+4,"21-25",18,21,false,true,true,true,true,true,true,true,true
+5,"26-30",23,26,false,true,true,true,true,true,true,true,true
+6,"31-35",28,31,false,true,true,true,true,true,true,true,true
+7,"36-40",33,36,false,true,true,true,true,true,true,true,true
+8,"41-45",38,41,false,true,true,true,true,true,true,true,true
+9,"46-50",43,46,false,true,true,true,true,true,true,true,true
+10,"51-55",48,51,false,true,true,true,true,true,true,true,true
+11,"56-60",53,56,false,true,true,true,true,true,true,true,true
+12,"61-75",61,61,false,true,true,true,true,true,true,true,true
+13,"66-70",63,66,false,true,true,true,true,true,true,true,true
+14,"71-75",68,71,false,true,true,true,true,true,true,true,true
+15,"76-80",73,76,false,true,true,true,true,true,true,true,true
+16,"81-85",78,81,false,true,true,true,true,true,true,true,true
+17,"86-90",83,86,false,true,true,true,true,true,true,true,true
+18,"91-95",88,91,false,true,true,true,true,true,true,true,true
+19,"96-100",93,96,false,true,true,true,true,true,true,true,true
+20,"101-105",98,101,false,true,true,true,true,true,true,true,true
+21,"106-110",103,106,false,true,true,true,true,true,true,true,true
+22,"111-115",108,111,false,true,true,true,true,true,true,true,true
+23,"116-120",113,116,false,true,true,true,true,true,true,true,true
+24,"121-125",118,121,false,true,true,true,true,true,true,true,true
+25,"126-130",123,126,false,true,true,true,true,true,true,true,true
+26,"131-135",128,131,false,true,true,true,true,true,true,true,true
+27,"136-140",133,136,false,true,true,true,true,true,true,true,true
+28,"141-145",138,141,false,true,true,true,true,true,true,true,true
+29,"146-150",143,146,false,true,true,true,true,true,true,true,true
+30,"151-155",148,151,false,true,true,true,true,true,true,true,true
+31,"156-160",153,156,false,true,true,true,true,true,true,true,true
+32,"161-175",158,161,false,true,true,true,true,true,true,true,true
+33,"166-170",163,166,false,true,true,true,true,true,true,true,true
+34,"171-175",168,171,false,true,true,true,true,true,true,true,true
+35,"176-180",173,176,false,true,true,true,true,true,true,true,true
+36,"181-185",178,181,false,true,true,true,true,true,true,true,true
+37,"186-190",183,186,false,true,true,true,true,true,true,true,true
+38,"191-195",188,191,false,true,true,true,true,true,true,true,true
+39,"196-200",193,196,false,true,true,true,true,true,true,true,true
+40,"[翻訳不要] レベル区分終端",255,255,false,true,true,true,true,true,true,true,true
+1000,"비전서",50,255,true,true,true,true,true,true,true,true,true
+1001,"비전서(창천 1)",50,255,true,true,true,true,true,true,true,true,true
+1002,"비전서(창천 2)",60,255,true,true,true,true,true,true,true,true,true
+1003,"하우징(1)",12,255,false,true,true,true,true,true,true,true,true
+1004,"하우징(2)",12,255,false,true,true,true,true,true,true,true,true
+1005,"염료",30,255,false,true,true,true,true,true,true,true,true
+1006,"PvP용",50,255,false,true,true,true,true,true,true,true,true
+1007,"이크살족 퀘스트",1,255,false,true,true,true,true,true,true,true,true
+1008,"모그리족 퀘스트",50,255,false,true,true,true,true,true,true,true,true
+1009,"[翻訳不要] SPレベル区分終端",255,255,false,true,true,true,true,true,true,true,true
+2000,"전승록",255,50,false,true,true,true,true,true,true,true,true
+2001,"",255,255,false,true,true,true,true,true,true,true,true

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.setine.mybatis.db.npc.NpcMapper">
+
+
+	<resultMap type="Npc" id="NpcResultMap">
+		<result property="_Key" column="Key" />
+		<result property="_Name_kr" column="SGL_kr" />
+		<result property="_Name_en" column="SGL_en" />
+		<result property="_Name_ja" column="SGL_ja" />
+		<result property="_Name" column="Name" />
+		<result property="_Value1" column="has_shop" />
+		<result property="_Value2" column="has_quest" />
+		<result property="_Value3" column="PlaceName" />
+		<result property="_Value4" column="PlaceName_Key" />
+		<result property="_Value5" column="region" />
+	</resultMap>
+	<resultMap type="Total" id="TotalResultMap">
+		<result property="key" column="Key" />
+		<result property="type" column="type" />
+		<result property="index_kr" column="Index_kr" />
+		<result property="index_ja" column="Index_ja" />
+		<result property="index_en" column="Index_en" />
+		<result property="path" column="path" />
+	</resultMap>
+	<select id="getList" resultMap="TotalResultMap">
+		SELECT A.`Key`, 'npc' as `type`,A.`Index_kr`, A.`Index_ja`, A.`Index_en`, A.`path` FROM `enpcresident` A WHERE A.`Index_kr` IS NOT NULL
+		<if test="params.category != -1">AND A.`Key` = ${params.category}</if> 
+		<if test="params.question.length() > 0">AND MATCH(A.`SGL_kr`, A.`SGL_en`, A.`SGL_ja`) AGAINST(CONCAT(#{question},'*') IN BOOLEAN MODE)</if>
+		UNION
+			SELECT A.`Key`, 'npc' as `type`,A.`Index_kr`, A.`Index_ja`, A.`Index_en`, A.`path` FROM `bnpcname` A WHERE A.`Index_kr` IS NOT NULL
+		<if test="params.category != -1">AND A.`Key` = ${params.category}</if> 
+		<if test="params.question.length() > 0">AND MATCH(A.`SGL_kr`, A.`SGL_en`, A.`SGL_ja`) AGAINST(CONCAT(#{question},'*') IN BOOLEAN MODE)</if>
+		 ORDER BY `Key` DESC LIMIT 0,100;
+	</select>
+	<select id="getNpcList" resultMap="TotalResultMap">
+		SELECT A.`Key`, 'npc' as `type`,A.`Index_kr`, A.`Index_ja`, A.`Index_en`, A.`path` FROM `enpcresident` A WHERE A.`Index_kr` IS NOT NULL
+		<if test="params.category != -1">AND A.`Key` = ${params.category}</if> 
+		<if test="params.question.length() > 0">AND MATCH(A.`SGL_kr`, A.`SGL_en`, A.`SGL_ja`) AGAINST(CONCAT(#{params.question},'*') IN BOOLEAN MODE)</if>
+		UNION
+			SELECT A.`Key`, 'npc' as `type`,A.`Index_kr`, A.`Index_ja`, A.`Index_en`, A.`path` FROM `bnpcname` A WHERE A.`Index_kr` IS NOT NULL
+		<if test="params.category != -1">AND A.`Key` = ${params.category}</if> 
+		<if test="params.question.length() > 0">AND MATCH(A.`SGL_kr`, A.`SGL_en`, A.`SGL_ja`) AGAINST(CONCAT(#{params.question},'*') IN BOOLEAN MODE)</if>
+		 ORDER BY `Key` DESC LIMIT 0,100;
+	</select>
+</mapper>

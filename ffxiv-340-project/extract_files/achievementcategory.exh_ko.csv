@@ -1,0 +1,68 @@
+Index,0 [0x0][0x0],1 [0x3][0x4],2 [0x19][0x5],3 [0x1a][0x5]
+0,"",0,true,false
+1,"일반",1,true,false
+2,"던전",1,true,false
+3,"토벌전",1,true,false
+4,"레이드",1,true,false
+5,"투기장",1,true,false
+6,"전장",1,true,false
+7,"PvP 순위",1,true,true
+8,"마물 사냥",1,true,false
+9,"보물찾기",1,true,false
+10,"일반",2,true,false
+11,"투사",2,true,false
+12,"마법사",2,true,false
+13,"제작자",2,true,false
+14,"채집가",2,true,false
+15,"PvP",2,true,false
+16,"플레이어 추천",2,true,false
+17,"골드 소서",2,true,false
+18,"일반",4,true,false
+19,"화폐",4,true,false
+20,"분해",4,true,false
+21,"소장품",4,true,false
+22,"마테리아",4,true,false
+23,"목수",5,true,false
+24,"대장장이",5,true,false
+25,"갑주제작사",5,true,false
+26,"보석공예가",5,true,false
+27,"가죽공예가",5,true,false
+28,"재봉사",5,true,false
+29,"연금술사",5,true,false
+30,"요리사",5,true,false
+31,"광부",6,true,false
+32,"원예가",6,true,false
+33,"어부",6,true,false
+34,"일반",8,true,false
+35,"의뢰",8,true,false
+36,"야만족 퀘스트",8,true,false
+37,"기간 한정 이벤트",8,true,true
+38,"라노시아",11,true,false
+39,"검은장막 숲",11,true,false
+40,"다날란",11,true,false
+41,"커르다스",11,true,false
+42,"모르도나",11,true,false
+43,"아발라시아",11,true,false
+44,"드라바니아",11,true,false
+45,"일반",12,true,false
+46,"흑와단",12,true,false
+47,"쌍사당",12,true,false
+48,"불멸대",12,true,false
+49,"전투",13,true,false
+50,"화폐",13,true,false
+51,"채집",13,true,false
+52,"퀘스트",13,true,false
+53,"기간 한정 이벤트",13,true,false
+54,"던전",13,true,false
+55,"탐험",13,true,false
+56,"총사령부",13,true,false
+57,"",0,false,false
+58,"",0,false,false
+59,"",0,false,false
+60,"",0,false,false
+61,"",0,false,false
+62,"",0,false,false
+63,"",0,false,false
+64,"",0,false,false
+65,"",0,false,false
+66,"",0,false,false

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.setine.mybatis.db.placename.PlacenameMapper">
+
+
+	<resultMap type="placename" id="PlacenameResultMap">
+		<result property="key" column="Key" />
+		<result property="index_kr" column="SGL_kr" />
+		<result property="index_ja" column="SGL_ja" />
+		<result property="index_en" column="SGL_en" />
+	</resultMap>
+	<resultMap type="Total" id="TotalResultMap">
+		<result property="key" column="Key" />
+		<result property="type" column="type" />
+		<result property="index_kr" column="SGL_kr" />
+		<result property="index_ja" column="SGL_ja" />
+		<result property="index_en" column="SGL_en" />
+	</resultMap>
+
+	<select id="getList" resultMap="TotalResultMap">
+		SELECT A.`Key`, 'placename' AS `type`, A.`SGL_kr`, A.`SGL_ja`, A.`SGL_en` FROM `placename` A WHERE A.`SGL_kr` IS NOT NULL 
+		<if test="params.category != -1">AND A.`Key` = ${params.category}</if> 
+		<if test="params.question.length() > 0">AND (`SGL_kr` LIKE CONCAT('%',#{params.question},'%') OR `SGL_ja` LIKE CONCAT('%',#{param.squestion},'%') OR `SGL_en` LIKE CONCAT('%',#{params.question},'%'))</if>
+	</select>
+	<select id="getPlacenameList" resultMap="TotalResultMap">
+		SELECT A.`Key`, 'placename' AS `type`, A.`SGL_kr`, A.`SGL_ja`, A.`SGL_en` FROM `placename` A WHERE A.`SGL_kr` IS NOT NULL 
+		<if test="params.category != -1">AND A.`Key` = ${params.category}</if> 
+		<if test="params.question.length() > 0">AND (`SGL_kr` LIKE CONCAT('%',#{params.question},'%') OR `SGL_ja` LIKE CONCAT('%',#{param.squestion},'%') OR `SGL_en` LIKE CONCAT('%',#{params.question},'%'))</if>
+	</select>
+</mapper>

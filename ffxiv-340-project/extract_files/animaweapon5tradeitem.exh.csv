@@ -1,0 +1,14 @@
+Index,0 [0x3][0x24],1 [0x7][0x0],2 [0x3][0x25],3 [0x7][0x4],4 [0x1][0x2f],5 [0x3][0x26],6 [0x7][0x8],7 [0x1][0x30],8 [0x3][0x27],9 [0x7][0xc],10 [0x1][0x31],11 [0x3][0x28],12 [0x7][0x10],13 [0x1][0x32],14 [0x3][0x29],15 [0x7][0x14],16 [0x1][0x33],17 [0x3][0x2a],18 [0x7][0x18],19 [0x1][0x34],20 [0x3][0x2b],21 [0x7][0x1c],22 [0x1][0x35],23 [0x3][0x2c],24 [0x7][0x20],25 [0x1][0x36],26 [0x3][0x2d],27 [0x3][0x2e]
+0,0,0,0,0,false,0,0,false,0,0,false,0,0,false,0,0,false,0,0,false,0,0,false,0,0,false,0,0
+1,1,15841,1,12839,false,5,0,false,0,0,false,0,0,false,0,0,false,0,0,false,0,0,false,0,0,false,0,1
+2,2,15841,1,12841,false,5,0,false,0,0,false,0,0,false,0,0,false,0,0,false,0,0,false,0,0,false,0,2
+3,3,15841,1,12913,false,1,12912,false,1,12233,false,1,0,false,0,0,false,0,0,false,0,0,false,0,0,false,0,3
+4,4,15841,1,12236,false,1,0,false,0,0,false,0,0,false,0,0,false,0,0,false,0,0,false,0,0,false,0,4
+5,5,15841,1,5637,false,1,5647,false,1,5657,false,1,0,false,0,0,false,0,0,false,0,0,false,0,0,false,0,5
+6,6,15841,1,5642,false,1,5652,false,1,5662,false,1,0,false,0,0,false,0,0,false,0,0,false,0,0,false,0,6
+7,7,15841,1,8145,false,3,8146,false,2,8148,false,3,8149,false,2,0,false,0,0,false,0,0,false,0,0,false,0,7
+8,8,15841,1,10124,false,5,0,false,0,0,false,0,0,false,0,0,false,0,0,false,0,0,false,0,0,false,0,8
+9,9,15841,1,6159,false,1,6163,false,1,9378,false,1,0,false,0,0,false,0,0,false,0,0,false,0,0,false,0,9
+10,10,15841,1,7885,false,5,6268,false,5,0,false,0,0,false,0,0,false,0,0,false,0,0,false,0,0,false,0,11
+11,11,15841,1,13626,false,2,9376,false,5,0,false,0,0,false,0,0,false,0,0,false,0,0,false,0,0,false,0,12
+12,12,15841,1,6161,false,1,7160,false,1,8020,false,1,0,false,0,0,false,0,0,false,0,0,false,0,0,false,0,10
