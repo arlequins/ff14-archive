@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd" >
+<properties>
+	<comment>english</comment>
+	<entry key="common.site.name">SETINE's FFXIV</entry>
+	<entry key="common.text.blank"> | </entry>
+	<entry key="common.menu.database">Databases</entry>
+	<entry key="common.menu.item">Item</entry>
+	<entry key="common.menu.quest">Quest</entry>
+	<entry key="common.menu.duty">Duty</entry>
+	<entry key="common.menu.npc">NPC</entry>
+	<entry key="common.menu.achi">Achievement</entry>
+	<entry key="common.menu.recipe">Recipe</entry>
+	<entry key="common.menu.gathering">Gathering</entry>
+	<entry key="common.menu.board">Board</entry>
+	<entry key="common.menu.board.total">Total Board</entry>
+	<entry key="common.menu.board.inven">Inven FreeBoard</entry>
+	<entry key="common.menu.board.ff14k">FF14 KOREA FreeBoard</entry>
+	<entry key="common.menu.garlandbell">GarlandBell</entry>
+	<entry key="common.menu.garlandbell.pre250">previous 2.5(OLD)</entry>
+	<entry key="common.menu.garlandbell.new300">after 3.0(NEW)</entry>
+	<entry key="common.menu.lodestone">Lodestone</entry>
+	<entry key="common.menu.fansite">Fansite</entry>
+	<entry key="common.menu.language">Language</entry>
+	<entry key="common.menu.version">Version</entry>
+	<entry key="common.menu.search">Search</entry>
+	<entry key="common.menu.search.lg10">Best 10 Search</entry>
+	<entry key="common.menu.totalsearch">Total Search</entry>
+	<entry key="common.menu.webmaster">Webmaster</entry>
+	<entry key="common.menu.total">Total</entry>
+	<entry key="common.menu.footer">© 2010-&lt;script type="text/javascript"&gt;document.write(new Date().getFullYear());&lt;/script&gt; SQUARE ENIX CO., LTD. All Rights Reserved. &lt;br&gt;This work is licensed under a Creative Commons Attribution 4.0 International License.</entry>	
+</properties>

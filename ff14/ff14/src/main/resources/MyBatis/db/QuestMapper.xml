@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.setine.mybatis.db.quest.QuestMapper">
+
+
+	<resultMap type="Quest" id="QuestResultMap">
+		<result property="_Key" column="Key" />
+		<result property="_Name_kr" column="Name_kr" />
+		<result property="_Name_en" column="Name_en" />
+		<result property="_Name_ja" column="Name_ja" />
+		<result property="_Value1" column="ClassLevel" />
+		<result property="_Value2" column="Sort" />
+		<result property="_Value3_1" column="place_name" />
+		<result property="_Value3_2" column="place_name_en" />
+		<result property="_Slot" column="journalgenre_name" />
+		<result property="_Slot2" column="journalgenre_name_en" />
+		<result property="_SecondKey" column="Genre_key" />
+	</resultMap>
+	<resultMap type="Total" id="TotalResultMap">
+		<result property="key" column="Key" />
+		<result property="type" column="type" />
+		<result property="index_kr" column="Index_kr" />
+		<result property="index_ja" column="Index_ja" />
+		<result property="index_en" column="Index_en" />
+		<result property="path" column="path" />
+	</resultMap>
+	<select id="getList" resultMap="TotalResultMap">
+		SELECT A.`Key`,'quest' as `type`, A.`Index_kr`, A.`Index_ja`,
+		A.`Index_en`, A.`path` FROM `quest` A WHERE A.`Index_kr` IS NOT NULL
+		<if test="params.category != -1">AND A.`Key` = ${params.category}</if>
+		<if test="params.question.length() > 0">AND MATCH(A.`Name_kr`, A.`Name_en`, A.`Name_ja`)
+			AGAINST(CONCAT(#{question},'*') IN BOOLEAN MODE)</if>
+		ORDER BY A.`Key` DESC LIMIT 0,100;
+	</select>
+	<select id="getQuestList" resultMap="TotalResultMap">
+		SELECT A.`Key`,'quest' as `type`, A.`Index_kr`, A.`Index_ja`,
+		A.`Index_en`, A.`path` FROM `quest` A WHERE A.`Index_kr` IS NOT NULL
+		<if test="params.category != -1">AND A.`Key` = ${params.category}</if>
+		<if test="params.question.length() > 0">AND MATCH(A.`Name_kr`, A.`Name_en`, A.`Name_ja`)
+			AGAINST(CONCAT(#{params.question},'*') IN BOOLEAN MODE)</if>
+		ORDER BY A.`Key` DESC LIMIT 0,100;
+	</select>
+</mapper>
+

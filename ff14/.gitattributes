@@ -1,0 +1,3 @@
+ff14/WebContent/* linguist-vendored
+project-docs/* linguist-documentation
+*.rb linguist-language=Java

@@ -1,0 +1,102 @@
+Index,0 [0x3][0xc],1 [0x0][0x0],2 [0x0][0x4],3 [0x0][0x8],4 [0x3][0xd]
+0,0,"[LogKind 미설정]<color #CCCCCC><value></color>","None","",0
+1,0,"<color #CCCCCC><value></color>","Debug","",0
+2,0,"<color #FF7F7F><value></color>","긴급 공지","",0
+3,0,"<color #B38CFF><value></color>","일반 공지","",0
+4,0,"","","",0
+5,0,"","","",0
+6,0,"","","",0
+7,0,"","","",0
+8,0,"","","",0
+9,0,"","","",0
+10,0,"<color?><value>: <value></color>","말하기","",1
+11,0,"<color?><value>: <value></color>","외치기","",1
+12,0,"<color?>>><value>: <value></color>","귓속말","",1
+13,0,"<color?><value> >> <value></color>","Tell_Receive","",0
+14,0,"<color?>(<value>) <value></color>","파티","",1
+15,0,"<color?>((<value>)) <value></color>","연합 파티","",1
+16,0,"<color?>[1]<<value>> <value></color>","링크셸 [1]","",1
+17,0,"<color?>[2]<<value>> <value></color>","링크셸 [2]","",1
+18,0,"<color?>[3]<<value>> <value></color>","링크셸 [3]","",1
+19,0,"<color?>[4]<<value>> <value></color>","링크셸 [4]","",1
+20,0,"<color?>[5]<<value>> <value></color>","링크셸 [5]","",1
+21,0,"<color?>[6]<<value>> <value></color>","링크셸 [6]","",1
+22,0,"<color?>[7]<<value>> <value></color>","링크셸 [7]","",1
+23,0,"<color?>[8]<<value>> <value></color>","링크셸 [8]","",1
+24,0,"<color?>[자유부대]<<value>> <value></color>","자유부대","",1
+25,0,"","","",0
+26,0,"","","",0
+27,0,"<color?>[초보자]<value>: <value></color>","초보자 대화","",1
+28,0,"<color?><value><value></color>","자기만의 감정 표현","",1
+29,50,"<color?><value></color>","감정 표현","",1
+30,0,"<color?><value>: <value></color>","떠들기","",1
+31,0,"","","",0
+32,0,"","","",0
+33,0,"","","",0
+34,0,"","","",0
+35,0,"","","",0
+36,0,"","","",0
+37,0,"","","",0
+38,0,"","","",0
+39,0,"","","",0
+40,0,"","","",0
+41,50,"<color?><value></color>","대상 피해","",2
+42,50,"<color?><value></color>","공격 실패","",2
+43,50,"<color?><value></color>","기술 시작 및 중단","",2
+44,50,"<color?><value></color>","아이템 사용 및 중단","",2
+45,50,"<color?><value></color>","대상 회복","",2
+46,50,"<color?><value></color>","강화 효과 부여","",2
+47,50,"<color?><value></color>","약화 효과 부여","",2
+48,50,"<color?><value></color>","","",0
+49,50,"<color?><value></color>","","",0
+50,0,"","","",0
+51,0,"","","",0
+52,0,"","","",0
+53,0,"","","",0
+54,0,"","","",0
+55,0,"","","",0
+56,0,"<color?><value></color>","숨김말","",3
+57,0,"<color?><value></color>","시스템 메시지","",3
+58,50,"<color?><value></color>","시스템 오류 메시지","",3
+59,0,"<color?><value></color>","전투 관련 시스템 메시지","",3
+60,0,"<color?><value></color>","채집 관련 시스템 메시지","",3
+61,0,"<color?><value>: <value></color>","NPC 대화","",3
+62,0,"<color?><value></color>","전리품 알림","",3
+63,0,"","","",0
+64,50,"<color?><value></color>","레벨업 및 습득","",3
+65,0,"<color?><value></color>","아이템 입찰 정보","",3
+66,50,"<color?><value></color>","제작 과정 및 결과","",3
+67,50,"<color?><value></color>","채집 과정 및 결과","",3
+68,0,"<color?><value>: <value></color>","NPC 대화: 공지 계열","",3
+69,0,"<color?><value></color>","자유부대 알림","",3
+70,0,"<color?><value></color>","자유부대원 로그인 알림","",0
+71,0,"<color?><value></color>","장터 판매 알림","",0
+72,0,"<color?><value></color>","새 파티 찾기 정보","",0
+73,0,"<color?><value></color>","표식 설정 정보","",0
+74,0,"<color?><value></color>","ダイスの出目","",0
+75,0,"<color?><value></color>","초보자 채널 알림","",0
+76,0,"<color?><value></color>","","",0
+77,0,"","","",0
+78,0,"","","",0
+79,0,"","","",0
+80,0,"<color?>[GM]<value> >> <value></color>","GM이 보낸 귓속말","",0
+81,0,"<color?>[GM]<value>: <value></color>","GM이 보낸 말하기","",0
+82,0,"<color?>[GM]<value>: <value></color>","GM이 보낸 외치기","",0
+83,0,"<color?>[GM]<value>: <value></color>","GM이 보낸 떠들기","",0
+84,0,"<color?>([GM]<value>) <value></color>","GM이 보낸 파티말","",0
+85,0,"<color?>[자유부대]<[GM]<value>> <value></color>","GM이 보낸 자유부대 대화","",0
+86,0,"<color?>[1]<[GM]<value>> <value></color>","GM이 보낸 링크셸1 대화","",0
+87,0,"<color?>[2]<[GM]<value>> <value></color>","GM이 보낸 링크셸2 대화","",0
+88,0,"<color?>[3]<[GM]<value>> <value></color>","GM이 보낸 링크셸3 대화","",0
+89,0,"<color?>[4]<[GM]<value>> <value></color>","GM이 보낸 링크셸4 대화","",0
+90,0,"<color?>[5]<[GM]<value>> <value></color>","GM이 보낸 링크셸5 대화","",0
+91,0,"<color?>[6]<[GM]<value>> <value></color>","GM이 보낸 링크셸6 대화","",0
+92,0,"<color?>[7]<[GM]<value>> <value></color>","GM이 보낸 링크셸7 대화","",0
+93,0,"<color?>[8]<[GM]<value>> <value></color>","GM이 보낸 링크셸8 대화","",0
+94,0,"<color?>[초보자][GM]<<value>>: <value></color>","","",0
+95,0,"","","",0
+96,0,"","","",0
+97,0,"","","",0
+98,0,"","","",0
+99,0,"","","",0
+100,0,"","","",0

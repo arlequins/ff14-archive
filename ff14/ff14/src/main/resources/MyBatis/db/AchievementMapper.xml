@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.setine.mybatis.db.achievement.AchievementMapper">
+
+
+	<resultMap type="Achievement" id="AchievementResultMap">
+		<result property="_Key" column="Key" />
+		<result property="_Name_kr" column="Name_kr" />
+		<result property="_Name_en" column="Name_en" />
+		<result property="_Name_ja" column="Name_ja" />
+		<result property="_Name" column="Name" />
+		<result property="_Value1" column="point" />
+		<result property="_Value2" column="Category_Name" />
+		<result property="_Value3" column="Kind_Key" />
+		<result property="_Value4" column="Kind_Name" />
+		<result property="_Value5" column="Title" />
+		<result property="_Value6" column="Item" />
+		<result property="_Value7" column="Category" />
+	</resultMap>
+	<resultMap type="Total" id="TotalResultMap">
+		<result property="key" column="Key" />
+		<result property="type" column="type" />
+		<result property="index_kr" column="Name_kr" />
+		<result property="index_ja" column="Name_en" />
+		<result property="index_en" column="Name_ja" />
+		<result property="path" column="path" />
+	</resultMap>
+	<select id="getList" resultMap="TotalResultMap">
+		SELECT A.`Key`, 'achievement' as `type`, A.`Name_kr`, A.`Name_ja`, A.`Name_en`, A.`path` FROM `achievement` A WHERE A.`Name_kr` IS NOT NULL
+		<if test="params.category != -1">AND A.`Key` = ${params.category}</if> 
+		<if test="params.question.length() > 0">AND MATCH(A.`Name_kr`, A.`Name_en`, A.`Name_ja`) AGAINST(CONCAT(#{params.question},'*') IN BOOLEAN MODE)</if>
+		 ORDER BY A.`Key` DESC LIMIT 0,100;
+	</select>
+	<select id="getAchievementList" resultMap="TotalResultMap">
+		SELECT A.`Key`, 'achievement' as `type`, A.`Name_kr`, A.`Name_ja`, A.`Name_en`, A.`path` FROM `achievement` A WHERE A.`Name_kr` IS NOT NULL
+		<if test="params.category != -1">AND A.`Key` = ${params.category}</if> 
+		<if test="params.question.length() > 0">AND MATCH(A.`Name_kr`, A.`Name_en`, A.`Name_ja`) AGAINST(CONCAT(#{params.question},'*') IN BOOLEAN MODE)</if>
+		 ORDER BY A.`Key` DESC LIMIT 0,100;
+	</select>
+</mapper>

@@ -1,0 +1,20 @@
+Index,0 [0x19][0x9],1 [0x1a][0x9],2 [0x1b][0x9],3 [0x3][0x0],4 [0x3][0x1],5 [0x3][0x2],6 [0x3][0x3],7 [0x3][0x4],8 [0x3][0x5],9 [0x3][0x6],10 [0x3][0x7],11 [0x3][0x8],12 [0x1c][0x9],13 [0x1d][0x9],14 [0x1e][0x9]
+0,false,false,false,0,8,4,1,0,0,0,0,0,false,true,false
+1,false,false,false,0,8,1,1,0,0,0,0,0,false,false,false
+2,false,false,false,0,8,4,1,0,1,1,1,1,false,true,false
+3,false,false,false,0,8,8,1,0,2,2,2,2,false,true,false
+4,true,true,false,3,24,8,3,0,2,2,2,2,false,false,false
+5,true,true,false,3,24,8,3,0,1,2,3,2,false,false,false
+6,true,true,false,3,24,8,3,0,1,2,2,3,false,false,false
+7,false,false,false,0,8,4,2,0,1,1,1,1,true,false,false
+8,true,true,false,3,24,8,9,0,0,0,0,0,false,false,false
+9,false,true,false,2,4,8,9,1,1,2,3,2,false,true,false
+10,false,false,false,0,8,8,2,0,2,2,2,2,true,false,false
+11,false,false,false,0,8,2,1,0,0,0,0,0,false,true,false
+12,false,false,false,0,8,4,1,0,0,0,0,0,false,true,false
+13,false,false,false,0,8,8,72,1,0,0,0,0,false,true,true
+14,false,false,false,0,8,8,2,0,0,0,0,0,false,true,false
+15,false,true,true,2,8,4,2,0,1,1,1,1,true,true,false
+16,false,true,true,2,16,8,2,0,2,2,2,2,true,true,false
+17,false,true,false,2,4,8,9,1,0,0,0,0,false,true,false
+18,false,false,false,0,8,8,2,0,0,0,0,0,false,false,false

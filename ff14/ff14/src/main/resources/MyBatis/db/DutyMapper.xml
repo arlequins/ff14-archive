@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.setine.mybatis.db.duty.DutyMapper">
+
+
+	<resultMap type="Duty" id="DutyResultMap">
+		<result property="_Key" column="Key" />
+		<result property="_Name_kr" column="Name_kr" />
+		<result property="_Name_en" column="Name_en" />
+		<result property="_Name_ja" column="Name_ja" />
+		<result property="_Name" column="Name" />
+		<result property="_Value1" column="LevelMin" />
+		<result property="_Value2" column="LevelMax" />
+		<result property="_Value3" column="ExVersion" />
+		<result property="_Value4" column="ContentType_Key" />
+		<result property="_Value5" column="ContentType_Name" />
+	</resultMap>
+	<resultMap type="Total" id="TotalResultMap">
+		<result property="key" column="Key" />
+		<result property="type" column="type" />
+		<result property="index_kr" column="Name_kr" />
+		<result property="index_ja" column="Name_en" />
+		<result property="index_en" column="Name_ja" />
+		<result property="path" column="path" />
+	</resultMap>
+	<select id="getList" resultMap="TotalResultMap">
+			SELECT A.`Key`, 'duty' as `type`,A.`Name_kr`, A.`Name_ja`, A.`Name_en`, A.`path` FROM `instancecontent` A WHERE A.`Name_kr` IS NOT NULL
+		<if test="params.category != -1">AND A.`Key` = ${params.category}</if> 
+		<if test="params.question.length() > 0">AND MATCH(A.`Name_kr`, A.`Name_ja`, A.`Name_en`) AGAINST(CONCAT(#{question},'*') IN BOOLEAN MODE)</if>
+		 ORDER BY A.`Key` DESC LIMIT 0,100;
+	</select>
+	<select id="getDutyList" resultMap="TotalResultMap">
+			SELECT A.`Key`, 'duty' as `type`,A.`Name_kr`, A.`Name_ja`, A.`Name_en`, A.`path` FROM `instancecontent` A WHERE A.`Name_kr` IS NOT NULL
+		<if test="params.category != -1">AND A.`Key` = ${params.category}</if> 
+		<if test="params.question.length() > 0">AND MATCH(A.`Name_kr`, A.`Name_ja`, A.`Name_en`) AGAINST(CONCAT(#{params.question},'*') IN BOOLEAN MODE)</if>
+		 ORDER BY A.`Key` DESC LIMIT 0,100;
+	</select>
+</mapper>

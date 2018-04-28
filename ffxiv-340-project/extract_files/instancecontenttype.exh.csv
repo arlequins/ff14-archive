@@ -1,0 +1,13 @@
+Index,0 [0x19][0x3],1 [0x1a][0x3],2 [0x3][0x0],3 [0x3][0x1],4 [0x3][0x2]
+0,true,false,0,0,0
+1,true,false,4,131,5
+2,true,false,1,130,2
+3,true,false,2,133,3
+4,true,false,3,132,4
+5,true,true,5,0,6
+6,true,true,6,0,6
+7,false,false,0,0,7
+8,true,false,0,0,20
+9,false,false,0,0,21
+10,false,false,0,130,9
+11,false,false,0,0,22
